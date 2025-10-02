@@ -46,7 +46,7 @@ code-advisor-agent/
 Para adicionar sua logo na documentação da API:
 1. Coloque o arquivo `logo.jpg` na pasta `files/`
 2. A logo aparecerá automaticamente em `/docs` (Swagger UI)
-3. Também estará disponível em `/static/logo.jpg`
+3. Também estará disponível em `/logo.jpg`
 
 ## 🚀 Como Executar
 
@@ -63,16 +63,13 @@ Para adicionar sua logo na documentação da API:
 git clone <repository-url>
 cd code-advisor-agent
 
-# 2. Configure as variáveis de ambiente (opcional)
-cp .env.example .env
-
-# 3. Inicie os serviços
+# 2. Inicie os serviços
 docker-compose up -d
 
-# 4. Verifique os logs
+# 3. Verifique os logs
 docker-compose logs -f api
 
-# 5. Acesse a documentação da API
+# 4. Acesse a documentação da API
 # http://localhost:8000/docs
 ```
 
