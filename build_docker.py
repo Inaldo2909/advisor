@@ -29,7 +29,7 @@ class BuildType(Enum):
 @dataclass
 class Config:
     """Configuração do projeto"""
-    project_name: str = "advisor-agent"
+    project_name: str = "advisor"
     image_name: str = "code-analysis-agent"
     api_port: int = 8000
     frontend_port: int = 3000
@@ -115,7 +115,7 @@ class DockerManager:
 
         if missing_files:
             print(f"{Colors.RED}❌ Arquivos obrigatórios não encontrados: {missing_files}{Colors.ENDC}")
-            print(f"{Colors.YELLOW}💡 Execute este script na raiz do projeto advisor-agent{Colors.ENDC}")
+            print(f"{Colors.YELLOW}💡 Execute este script na raiz do projeto advisor{Colors.ENDC}")
             return False
 
         # Verificar Docker

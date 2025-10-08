@@ -71,7 +71,7 @@ O **Advisor** é uma plataforma completa para análise automatizada de código q
 ### Estrutura do Projeto
 
 ```
-advisor-agent/
+advisor/
 ├── 📁 backend/                    # API Python
 │   ├── 📁 app/
 │   │   ├── 📁 api/               # Endpoints da API
