@@ -1,0 +1,23 @@
+[project]
+name = "advisor-agent"
+version = "0.1.0"
+description = "Advisor using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.186.1,<1.0.0"
+]
+
+[project.scripts]
+advisor = "advisor-agent.main:run"
+run_crew = "advisor-agent.main:run"
+train = "advisor-agent.main:train"
+replay = "advisor-agent.main:replay"
+test = "advisor-agent.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
